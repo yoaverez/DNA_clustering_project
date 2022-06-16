@@ -3,7 +3,11 @@
 This is an implementation of DNA clustering that improves on previous work done by Raschtian et al. in their paper:
 ["Clustering billions of reads for DNA data storage"](https://papers.nips.cc/paper/6928-clustering-billions-of-reads-for-dna-data-storage)
 
-Please see the research report, for full details and expected performance: in `research_report.pdf`
+Please see the research report, for full details and expected performance: in `research_report.pdf`.  
+
+## Requirements
+Make sure to download the requirements listed in `env_requirements.txt`.  
+There is a notebook that plots the performance, runtime, and other stats, you can find it by opening jupyter notebooks from the terminal at the project folder and run `behaviour_analysis.ipynb`.  
 
 ## Usage
 To run the clustering algorithm on your own data , bring an input file of simulated DNA strands,  in the form ${A,C,G,T}$.  
