@@ -25,5 +25,6 @@ It then produces statistics from the result files and logs the results.
 __`test_times`__: Receives functions to apply to the input files and runs them, logging the runtimes of the different functions. Helpful for evaluating the runtime complexity of our algorithm.
 
 
+__`test_handle_singletons`__: Runs the `test_stats` function on a number of files and logs the stats to the desired output file
 
  
