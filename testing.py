@@ -175,8 +175,8 @@ def test_stats(unions=False, singletons=False, rebellious_reads=False, summery=T
     """
 
     if file_path is None:
-        file_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat00_index.txt"
-        algo_result_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat00_index_algo_result.txt"
+        file_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat00_index.txt"
+        algo_result_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat00_index_algo_result.txt"
 
     clustering_info = ClusteringInfo(file_path=file_path)
     C_til, bin_sig_arr = file_to_algo_clustering(algo_result_path)
@@ -230,9 +230,9 @@ def test_handle_singletons(index_size=6, log=True, to_print=True):
     :param log: Whether or not to save the log in files. Default to True.
     :param to_print: Whether or not to print the log to screen. Default to True.
     """
-    file_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat0_index.txt"
-    algo_result_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat0_index_algo_result.txt"
-    log_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/stats files/stats0.txt"
+    file_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat0_index.txt"
+    algo_result_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat0_index_algo_result.txt"
+    log_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/stats files/stats0.txt"
     for i in range(5):
         # if i == 4:
         #     continue
@@ -259,10 +259,10 @@ def test_times(log=True, log_each_file=True, index_size=6):
         Default to True.
     :param index_size: The number of symbols dedicate for indexing. Default to 6.
     """
-    file_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat0_index.txt"
-    algo_result_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat0_index_algo_result.txt"
-    log_path_each_file = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/stats files/times0.txt"
-    log_path = "files/minion_idt/6000 strands in size 150 with x2 errors and cluster avg of 40/time stats_ver5_5.txt"
+    file_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/evyat0_index.txt"
+    algo_result_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/evyat0_index_algo_result.txt"
+    log_path_each_file = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/stats files/times0.txt"
+    log_path = "files/minion_idt/3000 strands in size 150 with x2 errors and cluster avg of 40/time stats_ver5_5.txt"
 
     # functions_to_check = [hash_based_cluster, handle_unions, handle_singletons_with_index_ver2_5_clean]
     functions_to_check = [hash_based_cluster, handle_unions, handle_singletons_with_index_ver5_5]

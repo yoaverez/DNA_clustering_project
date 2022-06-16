@@ -562,7 +562,7 @@ def handle_unions(algo_clustering, orig_cluster_info, bin_sign_arr, index_size, 
     unwanted_unions = find_unwanted_unions(stats1)
     for cluster_id, cluster in enumerate(algo_clustering):
         if len(cluster) >= avg_cluster_size:
-            cluster1, cluster2 = separate_cluster(cluster, bin_sign_arr, index_size, threshold=threshold)
+            cluster1, cluster2 = separate_cluster(cluster, bin_sign_arr, threshold=threshold)
             if cluster1 is not None:
                 sep_dict[cluster_id] = (cluster1, cluster2)
                 if cluster_id in unwanted_unions:
