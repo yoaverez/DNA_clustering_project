@@ -1,0 +1,32 @@
+**/.idea/*
+**/__pycache__/*
+**/venv/*
+*.pyc
+output/evyat.txt
+
+HeadEvyaLuis.txt
+HeadEvyaLuis_omer.txt
+LuisOutHybrid.txt
+hugefile_strands_in.txt
+mine_strands_in.txt
+errors_shuffled.txt
+output.txt
+output-results.txt
+output-results-fail.txt
+output-results-success.txt
+histogram.txt
+histogram.png
+strands_in_demo.txt
+**/cluster_output/*
+evyat.txt
+**/15000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/*
+**/15000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 40/algo_results/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 40/evyat files/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 25/algo_results/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 25/evyat files/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 25/run1/algo_results/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 25/run1/algo_results/*
+**/50000 strands in size 150 with x2 errors and cluster avg of 25/run2/algo_results/*
+**/input/15000 strands in size 150/*
+**/input/50000 strands in size 150/*
