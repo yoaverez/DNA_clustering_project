@@ -375,6 +375,7 @@ def handle_singletons_with_index_ver5_5(algo_clustering, orig_cluster_info, bin_
     ########################################################################
     number_of_singletons = None  # will represent both wanted and unwanted singletons.
                                  # Meaning sees only the algo clustering and not the real clustering.
+    print(f"########################### start running handle singletons ###########################")
     epoch_id = 0
     while epoch_id < num_epochs or converge:
         start = time.perf_counter_ns()
@@ -464,6 +465,7 @@ def handle_singletons_with_index_ver5_5(algo_clustering, orig_cluster_info, bin_
     print(f'number of singletons after {epoch_id} epochs: {number_of_singletons}')
     if converge:
         print(f'converge after {epoch_id} epochs')
+    print(f"########################### finish running handle singletons ###########################")
     if return_stats:
         return [sorted(x) for x in algo_clustering_copy if x != []], '',\
                num_of_remaining_singletons, times_for_each_epoch

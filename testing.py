@@ -187,7 +187,8 @@ def test_stats(unions=False, singletons=False, rebellious_reads=False, summery=T
                                                                  index_size=index_size, threshold=10, num_epochs=4,
                                                                  converge=True)
 
-    str_log = f'{unions_log}\n{singletons_log}\n'
+    str_log = f'{unions_log}\n' if unions else ''
+    str_log += f'{singletons_log}\n' if singletons else ''
 
     stats_ver_0 = stats_to_str_dict(find_clusters_stats(C_til, clustering_info)[0])
 
